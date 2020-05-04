@@ -1,6 +1,9 @@
 # MeetEasier - Custom Fork for Raspberry Pi Official Touchscreen
 
+Cloned from https://github.com/Collie147/MeetEasier
+Which is a fork of: https://github.com/danxfisher/MeetEasier
 
+The purpose of this repo is simply to provide a docker-image of this very interesting project.
 
 ## Description
 This is a customised fork of "MeetEasier" https://github.com/danxfisher/MeetEasier.
@@ -57,6 +60,29 @@ This application assumes you have:
     $ npm start-ui-dev
     ```
 
+***
+## Composefile
+https://hub.docker.com/repository/docker/trcha/meeteasier-touch
+```
+version: '3.7'
+
+services:
+  meeteasier-app:
+    image: trcha/meeteasier:latest
+    ports:
+      - '8088:8080'
+    restart: unless-stopped
+    environment:
+      - USERNAME='email'
+      - PASSWORD='password'
+      - DOMAIN='your.domain'
+
+    networks:
+      - meeteasier
+
+networks:
+  meeteasier:
+```
 ***
 
 ## Root Folder Structure Explained
