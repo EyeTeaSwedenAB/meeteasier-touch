@@ -52,9 +52,9 @@ module.exports = function (callback) {
 			  
               // if the email addresses != your corporate domain,
               // replace email domain with domain
-              let email = roomItem.Address;
-              email = email.substring(0, email.indexOf('@'));
-              email = email + '@' + auth.domain;
+              //let email = roomItem.Address;
+              //email = email.substring(0, email.indexOf('@'));
+              //email = email + '@' + auth.domain;
 
               let roomAlias = roomItem.Name.toLowerCase().replace(/\s+/g, "-");
 			  
