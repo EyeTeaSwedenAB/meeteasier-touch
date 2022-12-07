@@ -15,7 +15,7 @@
     "dotenv": "^8.2.0",
     "ews-javascript-api": "^0.9.4",
     "ews-javascript-api-auth": "^1.2.1",
-    "express": "4.16.2",
+    "express": "4.17.3",
     "fs": "0.0.1-security",
     "grunt": "^1.0.4",
     "grunt-contrib-sass": "1.0.0",
